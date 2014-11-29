@@ -1,0 +1,18 @@
+<h1>Homepage</h1>
+
+<% if current_user %>
+	Logado como <strong><%= current_user.name %></strong>
+	<%= link_to "Sign Out", signout_path, :onclick => 'FB.logout()' %>
+<% else %>
+	<%= link_to "Sign in with Facebook OK", "/auth/facebook", id: "sign_in" %>
+<% end %>
+
+<!--
+<ul>
+<% flash.each do |key, msg| %>
+  <%= content_tag :li, msg, id: key %>
+<% end %>
+</ul>
+
+<p><%= link_to 'Sign in with Facebook', signin_path %></p>
+-->

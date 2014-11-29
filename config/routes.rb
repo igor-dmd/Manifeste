@@ -1,5 +1,17 @@
 Rails.application.routes.draw do  
-    # The priority is based upon order of creation: first created -> highest priority.
+  get 'home/index'
+
+  resources :users
+
+  get '/auth/:provider/callback' => 'sessions#create'
+
+  get '/signout' => 'sessions#destroy', :as => :signout
+
+  get '/signin' => 'sessions#new', :as => :signin
+
+  root :to => 'home#index'
+
+  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
