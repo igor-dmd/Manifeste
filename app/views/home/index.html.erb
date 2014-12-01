@@ -2,7 +2,7 @@
 
 <% if current_user %>
 	Logado como <strong><%= current_user.name %></strong>
-	<%= link_to "Sign Out", signout_path, :onclick => 'FB.logout()' %>
+	<%= link_to "Sign Out", signout_path %>
 <% else %>
 	<%= link_to "Sign in with Facebook OK", "/auth/facebook", id: "sign_in" %>
 <% end %>

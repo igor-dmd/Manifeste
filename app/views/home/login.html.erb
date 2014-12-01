@@ -1,0 +1,23 @@
+<h1>Manifeste!</h1>
+
+<!-- Formulário de login -->
+
+<%= form_tag autenticar_path do %>
+	<div>
+	   	<%= label_tag 'email', 'Email' %><br>
+	    <%= email_field_tag 'email' %>
+	</div>
+	<div>
+	   	<%= label_tag 'password', 'Senha' %><br>
+	  	<%= password_field_tag 'password' %>
+	</div>
+	<div>
+	  	<%= submit_tag 'Entrar' %>
+	</div>
+<% end %>
+
+
+<!-- Botões de cadastro -->
+
+<%= link_to 'Cadastre-se', controller:'home', action: 'signup' %>
+<%= link_to 'Login com Facebook', "/auth/facebook", id: "sign_in" %>

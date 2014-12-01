@@ -1,0 +1,27 @@
+<h1>Cadastro</h1>
+
+<!-- Formulário de cadastro -->
+
+<%= form_tag cadastrar_path do %>
+	<div>
+	   	<%= label_tag 'name', 'Nome' %><br>
+	    <%= text_field_tag 'name' %>
+	</div>
+	<div>
+	   	<%= label_tag 'email', 'Email' %><br>
+	    <%= email_field_tag 'email' %>
+	</div>
+	<!-- Adicionar parametro no banco de dados -- >
+	<!--
+	<div>
+	   	<%= label_tag 'password', 'Senha' %><br>
+	  	<%= password_field_tag 'password' %>
+	</div>
+	-->
+	<div>
+	  	<%= submit_tag 'Cadastrar' %>
+	</div>
+<% end %>
+
+<!-- Voltar para a página de login -->
+<%= link_to 'Voltar' ,root_url %>

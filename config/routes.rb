@@ -1,15 +1,18 @@
-Rails.application.routes.draw do  
-  get 'home/index'
-
+Rails.application.routes.draw do
   resources :users
 
+  get 'home/index'
+  get 'home/login'
+  get 'home/signup'
+
+  post '/cadastrar' => 'home#create'
+
+  post '/autenticar' => 'sessions#login'
   get '/auth/:provider/callback' => 'sessions#create'
-
   get '/signout' => 'sessions#destroy', :as => :signout
-
   get '/signin' => 'sessions#new', :as => :signin
 
-  root :to => 'home#index'
+  root :to => 'home#login'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
