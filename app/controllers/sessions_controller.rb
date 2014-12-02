@@ -27,13 +27,14 @@ class SessionsController < ApplicationController
 
   # Função para destruir sessão
   def destroy
-  	# session[:user_id] =  nil
-  	# redirect_to root_url, :notice => 'Signed out'
+  	session[:user_id] =  nil
+  	redirect_to root_url, :notice => 'Signed out'
     # url = 'https://www.facebook.com/logout.php?next=http://localhost:3000/&access_token='
     # url << session[:token]
     # session[:user_id] = nil
     # session[:token] = nil
     # redirect_to (url)
     # redirect_to ("https://www.facebook.com/logout.php", { :next => "http://localhost:3000/" , :access_token => session[:token] } 
-    redirect_to "https://www.facebook.com/logout.php?next=http://localhost:3000/&access_token=#{session[:token}"
+    # redirect_to "https://www.facebook.com/logout.php?next=http://localhost:3000/&access_token=#{session[:token}"
+  end
 end
