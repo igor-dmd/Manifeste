@@ -29,6 +29,8 @@ class SessionsController < ApplicationController
   def destroy
   	session[:user_id] =  nil
   	redirect_to root_url, :notice => 'Signed out'
+    
+    # Em teste, funcionalidade relacionada ao logout do facebook
     # url = 'https://www.facebook.com/logout.php?next=http://localhost:3000/&access_token='
     # url << session[:token]
     # session[:user_id] = nil

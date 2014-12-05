@@ -9175,3 +9175,1535 @@ Processing by HomeController#index as JS
   [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
   Rendered home/index.html.erb within layouts/application (2.3ms)
 Completed 200 OK in 96ms (Views: 94.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:30:56 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#login as HTML
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-02 11:30:56 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (27.4ms)
+Completed 200 OK in 173ms (Views: 164.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:30:56 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:30:56 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:30:56 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+Processing by HomeController#index as JS
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 136ms (Views: 133.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-02 11:30:57 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:30:58 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:30:58 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:31:07 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:31:08 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQAdWy3AsgiaHz7JhkdE-Ps6z3KiIi-zpJPOpqXLJ84qIjDgYRviTM9GbWRvnge4sATxI1oNKrRwHqSsfxKaJEm7kpRtYr9vYQGLh0NK8SQONwijsgpBGRJu3YMEteNb9ouaV3GdYNtD4TzDzvy7DcfDD7JiCXehc0Z3adMcCw98RlXMpbJuajl97eQgRBZ3wjUwF_Hrs3FEcnlmYNQ5uWprCq8-RkXpJU9FvqAAs6cTd8biRu7UI2YWQGK7mPSCYrZ4YRt6krw2IUuus5ImwXYLWMovVKqLrCnC8kWLKUb2yVsoKh7U_D8x5sqzXmsY-jpa9cMIiltzwxhlzUbX7xV5&state=a21b444b1a2dc0d111fd7346dcb3fdabd5e025c644beee57" for 127.0.0.1 at 2014-12-02 11:31:08 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAdWy3AsgiaHz7JhkdE-Ps6z3KiIi-zpJPOpqXLJ84qIjDgYRviTM9GbWRvnge4sATxI1oNKrRwHqSsfxKaJEm7kpRtYr9vYQGLh0NK8SQONwijsgpBGRJu3YMEteNb9ouaV3GdYNtD4TzDzvy7DcfDD7JiCXehc0Z3adMcCw98RlXMpbJuajl97eQgRBZ3wjUwF_Hrs3FEcnlmYNQ5uWprCq8-RkXpJU9FvqAAs6cTd8biRu7UI2YWQGK7mPSCYrZ4YRt6krw2IUuus5ImwXYLWMovVKqLrCnC8kWLKUb2yVsoKh7U_D8x5sqzXmsY-jpa9cMIiltzwxhlzUbX7xV5", "state"=>"a21b444b1a2dc0d111fd7346dcb3fdabd5e025c644beee57", "provider"=>"facebook"}
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:10 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:10 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:31:10 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:31:10 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:31:10 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:32:12 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:32:12 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 153ms (Views: 152.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:32:16 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 106ms (Views: 105.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:32:17 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:32:17 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:32:17 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:32:17 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:32:18 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:32:18 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:32:42 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:32:42 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:32:42 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:32:42 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:32:42 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:12 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:13 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:35:30 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:30 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 167ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:34 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:34 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:34 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:35 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 91ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:35:37 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:35:37 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCtOWmPIuR26Z_5VM185gmcf_gd-7vluz3KpXKfRbM9hK3F8OMFVyrzeH8ajmCJk-m1jCbaI9kmdApYOHRzNboQqogeCkfziXwrGNf-suw4gu2KtSE5jr4n4-X3aclRcqN7UPPW7yK_qeAEtGRMFdtg0td4qxhxnqxbovuz31CEgken_gZQD7eWJhZ_nVITcmRI4od3Yz4GPkeBkEizlES3tT-L2bp9QA77Jx6lczJHclEXCiSXkWHlyKSFmojnjj9f-YUlV47O-pOHfhNqcuBsp9obpyl6PNDqAbkGa_1kpcSUoL-2Uo2pwQ93YXKe5f9KPsCixXUv-ua46QWisNS6&state=ffc410d91ae3ae5b1eb4b0c672299ae78b74ff149928ca9b" for 127.0.0.1 at 2014-12-02 11:35:43 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCtOWmPIuR26Z_5VM185gmcf_gd-7vluz3KpXKfRbM9hK3F8OMFVyrzeH8ajmCJk-m1jCbaI9kmdApYOHRzNboQqogeCkfziXwrGNf-suw4gu2KtSE5jr4n4-X3aclRcqN7UPPW7yK_qeAEtGRMFdtg0td4qxhxnqxbovuz31CEgken_gZQD7eWJhZ_nVITcmRI4od3Yz4GPkeBkEizlES3tT-L2bp9QA77Jx6lczJHclEXCiSXkWHlyKSFmojnjj9f-YUlV47O-pOHfhNqcuBsp9obpyl6PNDqAbkGa_1kpcSUoL-2Uo2pwQ93YXKe5f9KPsCixXUv-ua46QWisNS6", "state"=>"ffc410d91ae3ae5b1eb4b0c672299ae78b74ff149928ca9b", "provider"=>"facebook"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '679179202196175'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "name", "provider", "uid", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2014-12-02 14:35:44.702256"], ["email", "exerik06@hotmail.com"], ["name", "Érik Alexandre"], ["provider", "facebook"], ["uid", "679179202196175"], ["updated_at", "2014-12-02 14:35:44.702256"]]
+  [1m[35m (17.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 38ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:35:44 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:44 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:44 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:44 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:44 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 11]]
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 118ms (Views: 115.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:35:45 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 11]]
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:35:53 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:35:53 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:36:21 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:36:21 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCCcsFpzgnVZ0Wu9xGuuoYsigVCnm6Bdf-CtgWBKBGg98sVDZWoXRWVQEeMYD12DCSWaVAa7JPlevrN4GEKruQQ6HqJj46DBxdWHmzn55jAn-xytqojWu04xeCRDuY4lmlWG9dBa8Tm355TR5BLzJRC-MbIVXIEk3ENwFbLqbKPjWoDe6AtpNK0dEX7iWt-ImotlmvWAw-0O-qK87OFXbiI0m3YnMTtSEvQ5pupntQTHalr-egZKaHb4pPYcaatNOoH0hRX-Pf5eE99U5c0QDoO2_FhN9iMj-4L3HTiwxgkhzZuNfmh37mEd8MCwYDKM-C4y1pwU7zdweGBhIBuYkmf&state=1001ff3b3aede292926a6790d4eb7e1cd0eb34a20ef31bf6" for 127.0.0.1 at 2014-12-02 11:36:21 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCCcsFpzgnVZ0Wu9xGuuoYsigVCnm6Bdf-CtgWBKBGg98sVDZWoXRWVQEeMYD12DCSWaVAa7JPlevrN4GEKruQQ6HqJj46DBxdWHmzn55jAn-xytqojWu04xeCRDuY4lmlWG9dBa8Tm355TR5BLzJRC-MbIVXIEk3ENwFbLqbKPjWoDe6AtpNK0dEX7iWt-ImotlmvWAw-0O-qK87OFXbiI0m3YnMTtSEvQ5pupntQTHalr-egZKaHb4pPYcaatNOoH0hRX-Pf5eE99U5c0QDoO2_FhN9iMj-4L3HTiwxgkhzZuNfmh37mEd8MCwYDKM-C4y1pwU7zdweGBhIBuYkmf", "state"=>"1001ff3b3aede292926a6790d4eb7e1cd0eb34a20ef31bf6", "provider"=>"facebook"}
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 87.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:36:22 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:36:28 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:36:28 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 163ms (Views: 151.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 109ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:22 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 112ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:39:45 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:39:45 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:49 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:39:52 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 99ms (Views: 98.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:40:00 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:40:00 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQB3wd8sPWWi_7VpJsLMS1lThNyy-CIxaIVUlTbs0KATvyp5Jt0VMazAKJ28SmXwIQ9k-Vs4OxSMpjle26Q0Z2TqeNwEJmG2Cocgxdn8O2RR4e-1zy8FSihGhIXIOcdJqjmEaJXBd-BdQ397_IZYPuToMwDHvLvMwFxAKt4HnTbfWwb4GTkja-gzYt36a5GXz_iw_EiRp3UD-ZSgttGWbJhfFHoCpjLioZW5HIwZy2J5IUJQoxherCcRI3qk-fbnmCwxMXJt7qdLbU5aTU5VTTR3cIyUvLs0pU7p28s1_YLuf3G0SH8J17_EW7H-O14uUUAFg8EFk98G9dArqfCvvVpK&state=16e556c40cd47928f3e28c314d4e90bb691e33666bdd7841" for 127.0.0.1 at 2014-12-02 11:40:06 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQB3wd8sPWWi_7VpJsLMS1lThNyy-CIxaIVUlTbs0KATvyp5Jt0VMazAKJ28SmXwIQ9k-Vs4OxSMpjle26Q0Z2TqeNwEJmG2Cocgxdn8O2RR4e-1zy8FSihGhIXIOcdJqjmEaJXBd-BdQ397_IZYPuToMwDHvLvMwFxAKt4HnTbfWwb4GTkja-gzYt36a5GXz_iw_EiRp3UD-ZSgttGWbJhfFHoCpjLioZW5HIwZy2J5IUJQoxherCcRI3qk-fbnmCwxMXJt7qdLbU5aTU5VTTR3cIyUvLs0pU7p28s1_YLuf3G0SH8J17_EW7H-O14uUUAFg8EFk98G9dArqfCvvVpK", "state"=>"16e556c40cd47928f3e28c314d4e90bb691e33666bdd7841", "provider"=>"facebook"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 28ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:40:07 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 101ms (Views: 98.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 106ms (Views: 104.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:40:08 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 91ms (Views: 88.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:40:09 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:40:09 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 95ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:40:11 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:40:11 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQAgbD9bpsZ42Ygxi8S2hetBMVNGfe3uyMGvwWRxwgebOVsCTHZGc_nT2onmvj2EZgAJ5tkCKAiH182kS4vuorIw5nGLvhitEgqmoUw_mYjdysI27sHhM0cYmUeshaDhbqnAr7SRD2t4lUCw__vXVLG_d4rd2mBvgqSo6w4BnrHUqKW3ffDZX7AyZ9MPNs-DJQHwJVeECozhvS9CyF_QD7RUEeofx4cOSvfe4wKxMh5qR-Xd8-sHKpNxqaEtEpMGtfLU3ab10wDYL5xdzVasEmg0raIUAKYzWO5ZOYZ2aK_Rg35n-FPaUZTP9sTz9UDEP47RpTdTOVDSOAHkUSBipMWf&state=92326c725590bf5f983e6eb24bcac6996d3a2ca09ecef3bb" for 127.0.0.1 at 2014-12-02 11:40:12 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQAgbD9bpsZ42Ygxi8S2hetBMVNGfe3uyMGvwWRxwgebOVsCTHZGc_nT2onmvj2EZgAJ5tkCKAiH182kS4vuorIw5nGLvhitEgqmoUw_mYjdysI27sHhM0cYmUeshaDhbqnAr7SRD2t4lUCw__vXVLG_d4rd2mBvgqSo6w4BnrHUqKW3ffDZX7AyZ9MPNs-DJQHwJVeECozhvS9CyF_QD7RUEeofx4cOSvfe4wKxMh5qR-Xd8-sHKpNxqaEtEpMGtfLU3ab10wDYL5xdzVasEmg0raIUAKYzWO5ZOYZ2aK_Rg35n-FPaUZTP9sTz9UDEP47RpTdTOVDSOAHkUSBipMWf", "state"=>"92326c725590bf5f983e6eb24bcac6996d3a2ca09ecef3bb", "provider"=>"facebook"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 97ms (Views: 94.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-02 11:40:13 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 96ms (Views: 93.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-02 11:40:14 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:40:14 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:40:46 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-02 11:40:46 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 110ms (Views: 108.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 103ms (Views: 102.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-02 11:40:49 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 102ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:00:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (38.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 1603ms (Views: 1574.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:00:27 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 114ms (Views: 113.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-04 23:00:34 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-04 23:00:34 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQCdcvyXH2R4lACEqQ9YIHqRUWhX5kBW5n-Qmeg2tQvXKZfu2X4HJheSRzpQeN5F7krPk4jO-z_qPO5xHDpqWVJpJB-DaY9_foX9327SxmRBSpYur85h7xy61gaSKIH_XvFa4A5BkbUcrp0CUksHMcapi7A1AEfkDV4bQaSzBzaV1XjYILSzsbXdneEAlZYLQBlak1oORzTf-5_d_ArswrCSsgwHE74RhJCdEW3fj0iFTa0J5oJzrHrim0bFofNV0SbeexuvSfMI4tyQbJ2PqIguVZiItSlFqyG4Uw_kX-uPOD6irXhkcDk85QV1b7Kcq6ViTQcMfkxJIqhJQIR1QwP-&state=d4ed02cad96b30d19d7b9dae31046e417e3691b7163b58fb" for 127.0.0.1 at 2014-12-04 23:00:44 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQCdcvyXH2R4lACEqQ9YIHqRUWhX5kBW5n-Qmeg2tQvXKZfu2X4HJheSRzpQeN5F7krPk4jO-z_qPO5xHDpqWVJpJB-DaY9_foX9327SxmRBSpYur85h7xy61gaSKIH_XvFa4A5BkbUcrp0CUksHMcapi7A1AEfkDV4bQaSzBzaV1XjYILSzsbXdneEAlZYLQBlak1oORzTf-5_d_ArswrCSsgwHE74RhJCdEW3fj0iFTa0J5oJzrHrim0bFofNV0SbeexuvSfMI4tyQbJ2PqIguVZiItSlFqyG4Uw_kX-uPOD6irXhkcDk85QV1b7Kcq6ViTQcMfkxJIqhJQIR1QwP-", "state"=>"d4ed02cad96b30d19d7b9dae31046e417e3691b7163b58fb", "provider"=>"facebook"}
+  [1m[35mUser Load (23.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 194ms (ActiveRecord: 29.0ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:00:46 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (1.9ms)[0m  [1mSELECT "users".* FROM "users"  WHERE "users"."id" = 1[0m
+Completed 500 Internal Server Error in 6ms
+
+NoMethodError (undefined method `uid' for #<User::ActiveRecord_Relation:0x000000062d84c0>):
+  app/controllers/home_controller.rb:8:in `index'
+
+
+  Rendered /home/pedro/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/pedro/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/pedro/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/pedro/.rvm/gems/ruby-2.1.3/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (180.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+Processing by HomeController#login as HTML
+Redirected to http://localhost:3000/home/index
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (92.2ms)
+Completed 200 OK in 231ms (Views: 213.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:18 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 109ms (Views: 104.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:19 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 117ms (Views: 113.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 104ms (Views: 98.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:38 -0300
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:39 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 101ms (Views: 98.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:39 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 101ms (Views: 97.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 98ms (Views: 93.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 104ms (Views: 101.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:40 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 95ms (Views: 91.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 101ms (Views: 96.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 100ms (Views: 97.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2014-12-04 23:01:41 -0300
+Processing by HomeController#index as JS
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 101ms (Views: 97.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/signout" for 127.0.0.1 at 2014-12-04 23:01:43 -0300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:01:43 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 114ms (Views: 113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-04 23:02:50 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-04 23:02:50 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQC1r40tl4QNoa8GQjzvDeXTNmMTKh7Gl4ANexafyG8NOulxhcILObgjlvrcS0bUfg5bXWV3dwsJoKbHoOc4MLsPwL-mhzwywkDkHq7CEOm5nSJ_F0s4py191NcRydVL9cPV94wOdiSV3x22ONx68UILVuZR0kKELaMAznmXU_Ie2ZxQ6ThHVara9iirU8N3OaoV1isUG5kkJNzNnk7UZ582IhpeciZ2eT5WAT0SaTxGpJE7y00gyLl7HmtvV_pWlj9EjIb83XByRanPfVBNSHu14zmGWSeye4hVGPwzR49B6QX8ModD7yK04InoO25C9oIVMwIoZT1DgC4QBX0QEmnq&state=52413f2c6ac86e981f4bff8372e6b92a356ec97b05b394e6" for 127.0.0.1 at 2014-12-04 23:02:55 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQC1r40tl4QNoa8GQjzvDeXTNmMTKh7Gl4ANexafyG8NOulxhcILObgjlvrcS0bUfg5bXWV3dwsJoKbHoOc4MLsPwL-mhzwywkDkHq7CEOm5nSJ_F0s4py191NcRydVL9cPV94wOdiSV3x22ONx68UILVuZR0kKELaMAznmXU_Ie2ZxQ6ThHVara9iirU8N3OaoV1isUG5kkJNzNnk7UZ582IhpeciZ2eT5WAT0SaTxGpJE7y00gyLl7HmtvV_pWlj9EjIb83XByRanPfVBNSHu14zmGWSeye4hVGPwzR49B6QX8ModD7yK04InoO25C9oIVMwIoZT1DgC4QBX0QEmnq", "state"=>"52413f2c6ac86e981f4bff8372e6b92a356ec97b05b394e6", "provider"=>"facebook"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 102ms (Views: 98.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 112ms (Views: 108.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:02:57 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 108ms (Views: 104.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:08:16 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 129ms (Views: 128.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 118ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:08:17 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 90.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+Processing by HomeController#login as HTML
+  Rendered home/login.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 113ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-04 23:08:25 -0300
+Processing by HomeController#login as JS
+  Rendered home/login.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-04 23:08:26 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-12-04 23:08:27 -0300
+(facebook) Request phase initiated.
+
+
+Started GET "/auth/facebook/callback?code=AQBVSzX8SmCzjQ2Nv1sOKHMyXaeBv8p5izJH4Lj52kmE3avU_ZwND8-ssZkq70XmcA6CMHbxXwXK_1Bn4fa0qpSmgGB-SgqubLKRGLjyaCgV8UCFIUm9UJaSuJkKacXEsztabuDULQS1ZiZf8jV8gX9SgBf2MJgmH9HklwTsKM_SvzAHZXY2YpF_eIuYGuNFmDR-9iEuKwbHFt6cXcnSBkdGfNKADvLUVikFSqIvtoIhRwxwJ_dJ0CQuoQUixOuav-vhRWyimmPF1T0UGuQejj6bE5DmrXhB53suiTcwmu_8XzZmtBNutlrqX4vvyWIAd2aL8V7WNToTQNQKhxSXn9vm&state=6e1efafe1a7f4ae45a584fcf5d2bbc4b48b991c85ddb6e89" for 127.0.0.1 at 2014-12-04 23:08:27 -0300
+(facebook) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQBVSzX8SmCzjQ2Nv1sOKHMyXaeBv8p5izJH4Lj52kmE3avU_ZwND8-ssZkq70XmcA6CMHbxXwXK_1Bn4fa0qpSmgGB-SgqubLKRGLjyaCgV8UCFIUm9UJaSuJkKacXEsztabuDULQS1ZiZf8jV8gX9SgBf2MJgmH9HklwTsKM_SvzAHZXY2YpF_eIuYGuNFmDR-9iEuKwbHFt6cXcnSBkdGfNKADvLUVikFSqIvtoIhRwxwJ_dJ0CQuoQUixOuav-vhRWyimmPF1T0UGuQejj6bE5DmrXhB53suiTcwmu_8XzZmtBNutlrqX4vvyWIAd2aL8V7WNToTQNQKhxSXn9vm", "state"=>"6e1efafe1a7f4ae45a584fcf5d2bbc4b48b991c85ddb6e89", "provider"=>"facebook"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."provider" = 'facebook' AND "users"."uid" = '376068195887486'  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/home/index?notice=Usu%C3%A1rio+autenticado
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:08:28 -0300
+Processing by HomeController#index as HTML
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 120ms (Views: 116.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:28 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:28 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:28 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:28 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-12-04 23:08:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/facebook.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 107ms (Views: 100.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/home/index?notice=Usu%C3%A1rio+autenticado" for 127.0.0.1 at 2014-12-04 23:08:29 -0300
+Processing by HomeController#index as JS
+  Parameters: {"notice"=>"Usuário autenticado"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 100ms (Views: 96.7ms | ActiveRecord: 1.7ms)

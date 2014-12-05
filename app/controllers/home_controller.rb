@@ -3,6 +3,9 @@ class HomeController < ApplicationController
 
   # Página principal da aplicação
   def index
+    $id_face = session[:token]
+    user = User.find_by(:id => session[:user_id])
+    $id_user = user.uid
   end
 
   # Página de login

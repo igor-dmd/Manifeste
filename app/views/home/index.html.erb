@@ -1,4 +1,6 @@
 <h1>Homepage</h1>
+<%= $id_face %> <br>
+<%= $id_user %> <br>
 
 <% if current_user %>
 	Logado como <strong><%= current_user.name %></strong>
@@ -8,11 +10,6 @@
 <% end %>
 
 <!--
-<ul>
-<% flash.each do |key, msg| %>
-  <%= content_tag :li, msg, id: key %>
-<% end %>
-</ul>
+<%= link_to 'Enviar notifição', '#', :onclick => "notificar()" %> -->
 
-<p><%= link_to 'Sign in with Facebook', signin_path %></p>
--->
+<a href="https://graph.facebook.com/376068195887486/notifications?access_token=CAAI7a7q9n9MBABuYeM8kARvbBQ2Rh3kixRdpye9Suod0I7IvYo9UohpEqeHMchOyblZADblV07nZAmU98h4gAVfZALqIrbmJZAlFbpsrIpQElNcZCyIOMq1UbSlyqXM0zYVsE61XCcVxP9ZBWF3zGDf8enD9qb9ZCZCRUrjzUejhL93gZClL4O3JKkg4kQNsN4EaOmyUvZAX2KTK1eXerbFxSy&template=Ok">Aqui</a>
